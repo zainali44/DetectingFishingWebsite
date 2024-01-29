@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #242424;
+  margin: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  line-height: 0.2em;
+  color: azure;
+}
+h1.large {
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+h1.large:first-child {
+  margin-bottom: 1em;
+}
+h1.large .tiny {
+  font-size: 40px;
+  vertical-align: top;
+}
+h1.medium {
+  font-size: 50px;
+}
+h1.small {
+  font-size: 26px;
+  text-align: right;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4em;
+  margin-bottom: 2em;
+  color: rgb(250, 250, 250);
+}
+
+p {
+  font-size: 13px;
+  line-height: 1.4em;
+  text-align: justify;
+  color: rgb(250, 250, 250);
+}
+
+.spread {
+  display: grid;
+  grid-template-columns: minmax(300px, 1.2fr) minmax(300px, 1fr);
+  width: 100%;
+  box-shadow: 0 5px 15px hsla(0deg, 0%, 50%, 0.5);
+  margin: 1em auto;
+}
+.spread__left {
+  background: rgb(184, 180, 180);
+  background-image: url("https://images.unsplash.com/photo-1589466725882-f47191476e8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=775&q=80");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.spread__right {
+  background: rgb(26, 26, 26);
+  padding: 0 3em 0;
+}
+
+.title {
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto 4em;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 2vw;
+}
+
+.spread__page-bottom {
+  margin-top: 4em;
+  position: relative;
+}
+.spread__page-bottom:after {
+  content: "";
+  border-top: 1px solid rgb(21, 21, 21);
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.spread__page-bottom .fa-bicycle {
+  position: absolute;
+  bottom: 83%;
+  right: 0;
+}
+.spread__page-bottom .num {
+  padding: 1em;
+  background: rgb(32, 32, 32);
+  text-align: center;
+  color: white;
+  width: 4em;
+  margin: 0 auto;
+}/*# sourceMappingURL=Article.css.map */
